@@ -7,10 +7,10 @@ RSpec.describe 'Request' do
 
   describe 'happy paths' do
     # VCR.use_cassette('fixture name')
-      it 'What is my purpose?', :vcr do
+      it 'returns recipes for a country', :vcr do
         headers = { 'CONTENT_TYPE': 'application/json', 'ACCEPT': 'application/json' }
 
-        get 'route', headers: headers
+        get api_v1_recipes_path, headers: headers, params: { country: 'England' }
 
         expect(response).to be_successful
         expect(response.status).to eq(200)
