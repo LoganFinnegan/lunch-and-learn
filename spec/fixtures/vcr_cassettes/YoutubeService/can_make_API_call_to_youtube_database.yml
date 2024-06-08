@@ -1,0 +1,229 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/search?channelId=UCluQ5yInbeAkkeCndNnUhpw&key=AIzaSyATEtTThtLqR-beC_9rNogv5bFgMmvh5tk&part=snippet&q=India
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Sat, 08 Jun 2024 17:15:54 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+          "kind": "youtube#searchListResponse",
+          "etag": "eOeCZPiK1v4btDNXaMDNGqdDLUo",
+          "nextPageToken": "CAUQAA",
+          "regionCode": "US",
+          "pageInfo": {
+            "totalResults": 196,
+            "resultsPerPage": 5
+          },
+          "items": [
+            {
+              "kind": "youtube#searchResult",
+              "etag": "tUaxkTw4UAm2_GCCgiRbqnEw1kc",
+              "id": {
+                "kind": "youtube#video",
+                "videoId": "xvshRPFgCeI"
+              },
+              "snippet": {
+                "publishedAt": "2021-01-12T20:21:11Z",
+                "channelId": "UCluQ5yInbeAkkeCndNnUhpw",
+                "title": "A Super Quick History of India",
+                "description": "Sources: \"The Penguin History of Early India: From the Origins to AD 1300\" (2003) by Romila Thapar. Penguin Books Ltd, London.",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/xvshRPFgCeI/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/xvshRPFgCeI/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/xvshRPFgCeI/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "Mr History",
+                "liveBroadcastContent": "none",
+                "publishTime": "2021-01-12T20:21:11Z"
+              }
+            },
+            {
+              "kind": "youtube#searchResult",
+              "etag": "eJABHDkPl6IlmB3ufPB-rI-sU7w",
+              "id": {
+                "kind": "youtube#video",
+                "videoId": "GTmHYVUJTAM"
+              },
+              "snippet": {
+                "publishedAt": "2022-10-07T14:05:54Z",
+                "channelId": "UCluQ5yInbeAkkeCndNnUhpw",
+                "title": "A Super Quick History of Pakistan",
+                "description": "Pictures/Video Requiring Attribution: https://pastebin.com/3c57sbcJ #Pakistan #history.",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/GTmHYVUJTAM/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/GTmHYVUJTAM/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/GTmHYVUJTAM/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "Mr History",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-10-07T14:05:54Z"
+              }
+            },
+            {
+              "kind": "youtube#searchResult",
+              "etag": "bFLu7ypUuAgf--wAv5rPr4cauVQ",
+              "id": {
+                "kind": "youtube#video",
+                "videoId": "PvefyIXfqek"
+              },
+              "snippet": {
+                "publishedAt": "2021-12-13T21:16:26Z",
+                "channelId": "UCluQ5yInbeAkkeCndNnUhpw",
+                "title": "A Super Quick History of the Maldives",
+                "description": "Pictures Requiring Attribution: Gsnewid: https://commons.wikimedia.org/wiki/File:Coconut_Tree_in_Tamilnadu.jpg Indunil ...",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/PvefyIXfqek/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/PvefyIXfqek/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/PvefyIXfqek/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "Mr History",
+                "liveBroadcastContent": "none",
+                "publishTime": "2021-12-13T21:16:26Z"
+              }
+            },
+            {
+              "kind": "youtube#searchResult",
+              "etag": "xxKM1sWoRNGCv6p7Zcnk_raqAf4",
+              "id": {
+                "kind": "youtube#video",
+                "videoId": "JS-1d8c5cX4"
+              },
+              "snippet": {
+                "publishedAt": "2019-08-07T18:59:33Z",
+                "channelId": "UCluQ5yInbeAkkeCndNnUhpw",
+                "title": "A Super Quick History of Bhutan",
+                "description": "Source: The History of Bhutan (2013) by Karma Phuntsho, Random House India, Noida. https://www.britannica.com/place/Bhutan ...",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/JS-1d8c5cX4/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/JS-1d8c5cX4/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/JS-1d8c5cX4/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "Mr History",
+                "liveBroadcastContent": "none",
+                "publishTime": "2019-08-07T18:59:33Z"
+              }
+            },
+            {
+              "kind": "youtube#searchResult",
+              "etag": "8KM0CDY_CgqtrXDArNAdnAtf6dc",
+              "id": {
+                "kind": "youtube#video",
+                "videoId": "U2YMewwotiQ"
+              },
+              "snippet": {
+                "publishedAt": "2021-01-26T06:23:15Z",
+                "channelId": "UCluQ5yInbeAkkeCndNnUhpw",
+                "title": "A Super Quick History of Indonesia",
+                "description": "Sources: \"A Brief History of Indonesia\" (2015 ) by Tim Hannigan. Tuttle Publishing, North Clarendon, VT.",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/U2YMewwotiQ/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/U2YMewwotiQ/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/U2YMewwotiQ/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "Mr History",
+                "liveBroadcastContent": "none",
+                "publishTime": "2021-01-26T06:23:15Z"
+              }
+            }
+          ]
+        }
+  recorded_at: Sat, 08 Jun 2024 17:15:54 GMT
+recorded_with: VCR 6.2.0

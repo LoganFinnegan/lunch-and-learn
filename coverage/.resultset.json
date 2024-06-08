@@ -1,26 +1,26 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/loganfinnegan/turing/3mod/r2/projects/lunch-and-learn/app/services/country_service.rb": {
+      "/Users/loganfinnegan/turing/3mod/r2/projects/lunch-and-learn/app/services/youtube_service.rb": {
         "lines": [
           1,
           1,
           1,
           1,
-          null,
-          1,
-          null,
-          null,
           1,
           null,
           1,
+          null,
+          null,
           1,
           null,
+          1,
+          1,
           null,
           null
         ]
       }
     },
-    "timestamp": 1717862570
+    "timestamp": 1717867211
   }
 }

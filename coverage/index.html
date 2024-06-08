@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2024-06-08T11:02:50-05:00">2024-06-08T11:02:50-05:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2024-06-08T12:20:11-05:00">2024-06-08T12:20:11-05:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -43,8 +43,8 @@
   </div>
 
   <div class="t-line-summary">
-    <b>8</b> relevant lines,
-    <span class="green"><b>8</b> lines covered</span> and
+    <b>9</b> relevant lines,
+    <span class="green"><b>9</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -71,11 +71,11 @@
       <tbody>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#9be3ae72d6b5ab84f6019a41dafd2d86ff00cbf6" class="src_link" title="app/services/country_service.rb">app/services/country_service.rb</a></td>
+            <td class="strong t-file__name"><a href="#421381e7928c02ddd428b54c18c6b8f5865a0e8c" class="src_link" title="app/services/youtube_service.rb">app/services/youtube_service.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">15</td>
-            <td class="cell--number">8</td>
-            <td class="cell--number">8</td>
+            <td class="cell--number">9</td>
+            <td class="cell--number">9</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -98,9 +98,9 @@
 
       <div class="source_files">
       
-        <div class="source_table" id="9be3ae72d6b5ab84f6019a41dafd2d86ff00cbf6">
+        <div class="source_table" id="421381e7928c02ddd428b54c18c6b8f5865a0e8c">
   <div class="header">
-    <h3>app/services/country_service.rb</h3>
+    <h3>app/services/youtube_service.rb</h3>
     <h4>
       <span class="green">
   100.0%
@@ -112,8 +112,8 @@
     
 
     <div class="t-line-summary">
-      <b>8</b> relevant lines.
-      <span class="green"><b>8</b> lines covered</span> and
+      <b>9</b> relevant lines.
+      <span class="green"><b>9</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -131,7 +131,7 @@
 
             
 
-            <code class="ruby">class CountryService					</code>
+            <code class="ruby">class YoutubeService					</code>
           </li>
         </div>
       
@@ -169,7 +169,18 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="5">
+          <li class="covered" data-hits="1" data-linenumber="5">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      request.params[:key] = Rails.application.credentials.youtube[:key]		</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="6">
             
             
 
@@ -180,7 +191,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="6">
+          <li class="covered" data-hits="1" data-linenumber="7">
             <span class="hits">1</span>
             
 
@@ -191,7 +202,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="7">
+          <li class="never" data-hits="" data-linenumber="8">
             
             
 
@@ -202,7 +213,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="8">
+          <li class="never" data-hits="" data-linenumber="9">
             
             
 
@@ -213,7 +224,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="9">
+          <li class="covered" data-hits="1" data-linenumber="10">
             <span class="hits">1</span>
             
 
@@ -224,7 +235,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="10">
+          <li class="never" data-hits="" data-linenumber="11">
             
             
 
@@ -235,7 +246,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="11">
+          <li class="covered" data-hits="1" data-linenumber="12">
             <span class="hits">1</span>
             
 
@@ -246,24 +257,13 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="12">
+          <li class="covered" data-hits="1" data-linenumber="13">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    Faraday.new(&#39;https://restcountries.com/v3.1/all&#39;)		</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="13">
-            
-            
-
-            
-
-            <code class="ruby">  end</code>
+            <code class="ruby">    Faraday.new(&#39;https://www.googleapis.com&#39;)		</code>
           </li>
         </div>
       
@@ -274,7 +274,7 @@
 
             
 
-            <code class="ruby">end</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -285,7 +285,7 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">end</code>
           </li>
         </div>
       
