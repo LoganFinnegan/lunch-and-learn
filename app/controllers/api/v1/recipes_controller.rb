@@ -3,7 +3,7 @@ class Api::V1::RecipesController < ApplicationController
     if params[:country].present?
       country = params[:country]
     else 
-      country = CountryFacade.get_country
+      country = CountryFacade.get_country.name
     end
 
     recipes = EdamamFacade.search_recipes(country)

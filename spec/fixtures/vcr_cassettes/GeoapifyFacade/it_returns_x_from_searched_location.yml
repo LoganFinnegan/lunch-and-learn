@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.geoapify.com/v2/places?apiKey=4601cc6855224a008b040e785a9d591a&bias=proximity:-103.8535738,1.3051442&categories=public_transport.subway&limit=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 10 Jun 2024 02:43:51 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Api-Version:
+      - '1.0'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - accept, accept-language, content-language, access-control-max-age, access-control-allow-headers,
+        access-control-allow-methods, access-control-allow-origin, allow, api-version,
+        cf-ray, content-encoding, content-type, date, expect-ct, server, status, vary,
+        cache-control, etag, last-modified, expires, host, cf-region-code, cf-timezone,
+        accept-encoding, x-forwarded-for, x-forwarded-proto, cf-visitor, user-agent,
+        cf-connecting-ip, cdn-loop, cf-ipcity, cf-ipcontinent, cf-ipcountry, cf-iplatitude,
+        cf-iplongitude, cf-metro-code, cf-postal-code, cf-region, x-forwarded-port
+      Access-Control-Allow-Methods:
+      - GET, POST, DELETE, OPTIONS, PUT
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - private, max-age=0, no-cache
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=JU5mWD86Dd45tjm%2BOAQ9pinpcBhyU026BlklD%2BHv1nk8FggZdGA%2B%2F0y6P2bs6wj2Eerp48qMVv0i7T2ZBgiN%2F9JW21VeDIekl7j18IkgsoIidW0Ms5LbOoOU8zZ89XjmigA%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8916040a1d764c9c-MSP
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJ0eXBlIjoiRmVhdHVyZUNvbGxlY3Rpb24iLCJmZWF0dXJlcyI6W3sidHlwZSI6IkZlYXR1cmUiLCJwcm9wZXJ0aWVzIjp7Im5hbWUiOiJVbml2ZXJzaWRhZCIsImNvdW50cnkiOiJNZXhpY28iLCJjb3VudHJ5X2NvZGUiOiJteCIsImNpdHkiOiJNZXhpY28gQ2l0eSIsInZpbGxhZ2UiOiJDaXVkYWQgVW5pdmVyc2l0YXJpYSIsInBvc3Rjb2RlIjoiMDQ1MTAiLCJkaXN0cmljdCI6IkNvbG9uaWEgUGVkcmVnYWwgZGUgU2FudG8gRG9taW5nbyIsInN1YnVyYiI6IkNveW9hY8OhbiIsInN0cmVldCI6IkF2ZW5pZGEgRG9jdG9yIEFudG9uaW8gRGVsZsOtbiBNYWRyaWdhbCIsImxvbiI6LTk5LjE3MzkwNTQsImxhdCI6MTkuMzI0NDc1MywiZm9ybWF0dGVkIjoiVW5pdmVyc2lkYWQsIEF2ZW5pZGEgRG9jdG9yIEFudG9uaW8gRGVsZsOtbiBNYWRyaWdhbCwgQ295b2Fjw6FuLCAwNDUxMCBNZXhpY28gQ2l0eSwgTWV4aWNvIiwiYWRkcmVzc19saW5lMSI6IlVuaXZlcnNpZGFkIiwiYWRkcmVzc19saW5lMiI6IkF2ZW5pZGEgRG9jdG9yIEFudG9uaW8gRGVsZsOtbiBNYWRyaWdhbCwgQ295b2Fjw6FuLCAwNDUxMCBNZXhpY28gQ2l0eSwgTWV4aWNvIiwiY2F0ZWdvcmllcyI6WyJwdWJsaWNfdHJhbnNwb3J0IiwicHVibGljX3RyYW5zcG9ydC5zdWJ3YXkiXSwiZGV0YWlscyI6WyJkZXRhaWxzIiwiZGV0YWlscy53aWtpX2FuZF9tZWRpYSJdLCJkYXRhc291cmNlIjp7InNvdXJjZW5hbWUiOiJvcGVuc3RyZWV0bWFwIiwiYXR0cmlidXRpb24iOiLCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycyIsImxpY2Vuc2UiOiJPcGVuIERhdGFiYXNlIExpY2Vuc2UiLCJ1cmwiOiJodHRwczovL3d3dy5vcGVuc3RyZWV0bWFwLm9yZy9jb3B5cmlnaHQiLCJyYXciOnsibmFtZSI6IlVuaXZlcnNpZGFkIiwib3NtX2lkIjo1MzM1MjcxOTU1LCJzdWJ3YXkiOiJ5ZXMiLCJuZXR3b3JrIjoiU1RDIE1ldHJvIiwicmFpbHdheSI6InN0YXRpb24iLCJzdGF0aW9uIjoic3Vid2F5Iiwib3NtX3R5cGUiOiJuIiwid2lraWRhdGEiOiJRNjgyNDc2NCIsIndpa2lwZWRpYSI6ImVzOlVuaXZlcnNpZGFkIChlc3RhY2nDs24gZGUgTWV0cm8gZGUgQ2l1ZGFkIGRlIE3DqXhpY28pIiwicHVibGljX3RyYW5zcG9ydCI6InN0YXRpb24ifX0sIm5ldHdvcmsiOiJTVEMgTWV0cm8iLCJ3aWtpX2FuZF9tZWRpYSI6eyJ3aWtpZGF0YSI6IlE2ODI0NzY0Iiwid2lraXBlZGlhIjoiZXM6VW5pdmVyc2lkYWQgKGVzdGFjacOzbiBkZSBNZXRybyBkZSBDaXVkYWQgZGUgTcOpeGljbykifSwiZGlzdGFuY2UiOjIwNTc1NDIsInBsYWNlX2lkIjoiNTE0MjY2MWQ0NDIxY2I1OGMwNTk3MzRkMzNkMDEwNTMzMzQwZjAwMTAzZjkwMTEzY2EwMTNlMDEwMDAwMDA5MjAzMGI1NTZlNjk3NjY1NzI3MzY5NjQ2MTY0In0sImdlb21ldHJ5Ijp7InR5cGUiOiJQb2ludCIsImNvb3JkaW5hdGVzIjpbLTk5LjE3MzkwNTQsMTkuMzI0NDc1MzAwMzM1OTE2XX19XX0=
+  recorded_at: Mon, 10 Jun 2024 02:43:51 GMT
+recorded_with: VCR 6.2.0

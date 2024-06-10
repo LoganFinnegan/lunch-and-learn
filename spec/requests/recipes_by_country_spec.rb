@@ -30,7 +30,7 @@ RSpec.describe 'Request' do
   
 
     VCR.use_cassette('returns_random_country_recipes_when_none_is_given.yml') do
-      xit 'returns random country recipes when none is given', :vcr do 
+      it 'returns random country recipes when none is given', :vcr do 
         headers = { 'CONTENT_TYPE': 'application/json', 'ACCEPT': 'application/json' }
 
         get api_v1_recipes_path, headers: headers
