@@ -3,6 +3,5 @@ class Api::V1::TouristSitesController < ApplicationController
     lat_lon = GeoCountriesFacade.find_country(params[:country]).first
     places  = GeoapifyFacade.search_for(lat_lon)
     render json: TouristSiteSerializer.new(places)
-    # require 'pry'; binding.pry
   end
 end

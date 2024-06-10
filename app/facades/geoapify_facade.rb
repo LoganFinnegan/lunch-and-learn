@@ -5,6 +5,6 @@ class GeoapifyFacade
     limit: 10
   }
   result = GeoapifyService.call_db('/v2/places', params)[:features]
-    result.map { |r| Geoapify.new(r[:properties]) }
+  result.map { |r| Geoapify.new(r[:properties]) }
   end
 end

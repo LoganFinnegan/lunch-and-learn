@@ -3,7 +3,6 @@ class GeoCountry
               :lon
   
   def initialize(data)
-    # require 'pry'; binding.pry
     @lat = data[:properties][:lon]
     @lon = data[:properties][:lat]
   end

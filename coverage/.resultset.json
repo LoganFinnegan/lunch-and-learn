@@ -1,101 +1,6 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/loganfinnegan/turing/3mod/r2/projects/lunch-and-learn/app/controllers/api/v1/tourist_sites_controller.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/loganfinnegan/turing/3mod/r2/projects/lunch-and-learn/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/Users/loganfinnegan/turing/3mod/r2/projects/lunch-and-learn/app/facades/geo_countries_facade.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/loganfinnegan/turing/3mod/r2/projects/lunch-and-learn/app/services/geo_countries_service.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/loganfinnegan/turing/3mod/r2/projects/lunch-and-learn/app/poros/geo_country.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          null,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/loganfinnegan/turing/3mod/r2/projects/lunch-and-learn/app/facades/geoapify_facade.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          11,
-          null,
-          null
-        ]
-      },
-      "/Users/loganfinnegan/turing/3mod/r2/projects/lunch-and-learn/app/services/geoapify_service.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
       "/Users/loganfinnegan/turing/3mod/r2/projects/lunch-and-learn/app/poros/geoapify.rb": {
         "lines": [
           1,
@@ -106,23 +11,15 @@
           null,
           null,
           1,
-          10,
-          10,
-          10,
-          10,
+          1,
+          1,
+          1,
+          1,
           null,
-          null
-        ]
-      },
-      "/Users/loganfinnegan/turing/3mod/r2/projects/lunch-and-learn/app/serializers/tourist_site_serializer.rb": {
-        "lines": [
-          1,
-          1,
-          1,
           null
         ]
       }
     },
-    "timestamp": 1718034872
+    "timestamp": 1718037724
   }
 }
