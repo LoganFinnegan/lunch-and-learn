@@ -22,8 +22,7 @@ RSpec.describe 'list favorites' do
 
   describe 'happy paths' do
     it 'returns a list of favorite recipes' do
-      json_body = {   api_key: "jgn983hy48thw9begh98h4539h4"
-                  }
+      json_body = { api_key: "jgn983hy48thw9begh98h4539h4" }
       # get api_v1_favorites_path, headers: headers
       request_path(:get, api_v1_favorites_path, json_body)
 

@@ -5,7 +5,6 @@ class Api::V1::FavoritesController < ApplicationController
       faves = user.favorites
       render json: FavoriteSerializer.new(faves)
     else
-      # require 'pry'; binding.pry 
       render json: { error: "Invalid API key" }, status: :unauthorized
     end
   end
@@ -18,6 +17,11 @@ class Api::V1::FavoritesController < ApplicationController
     else
       render json: { error: "User does not have necessary permission" }, status: :unauthorized
     end
+  end
+
+  def destroy 
+    item = current_user.favorites.find(params[:id])
+    item.destroy
   end
 
   private
