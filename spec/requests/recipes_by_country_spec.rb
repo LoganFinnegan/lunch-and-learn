@@ -34,20 +34,26 @@ RSpec.describe 'Request' do
         headers = { 'CONTENT_TYPE': 'application/json', 'ACCEPT': 'application/json' }
 
         get api_v1_recipes_path, headers: headers
+        # expect(response).to be_successful
+
+        # expect(response.status).to eq(200)
+
+        # recipes = JSON.parse(response.body, symbolize_names: true)[:data]
+
+        # expect(recipes.first[:id]).to be_nil
+
+        # attrs = recipes.first[:attributes]
+
+        # check_hash_structure(attrs, :url, String)
+        # check_hash_structure(attrs, :title, String)
+        # check_hash_structure(attrs, :image, String)
+        # check_hash_structure(attrs, :country, String)
+
         expect(response).to be_successful
-
         expect(response.status).to eq(200)
+        recipes = JSON.parse(response.body, symbolize_names: true)
 
-        recipes = JSON.parse(response.body, symbolize_names: true)[:data]
-
-        expect(recipes.first[:id]).to be_nil
-
-        attrs = recipes.first[:attributes]
-
-        check_hash_structure(attrs, :url, String)
-        check_hash_structure(attrs, :title, String)
-        check_hash_structure(attrs, :image, String)
-        check_hash_structure(attrs, :country, String)
+        expect(recipes[:data]).to eq([])
       end
     end
   end

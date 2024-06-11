@@ -28,5 +28,7 @@ module LunchAndLearn
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+    config.session_store :cookie_store, key: '_lunch_and_learn_session'
+    config.middleware.use ActionDispatch::Session::CookieStore, key: '_lunch_and_learn_session'
   end
 end
