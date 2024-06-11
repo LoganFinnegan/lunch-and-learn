@@ -22,6 +22,7 @@ class Api::V1::FavoritesController < ApplicationController
   def destroy 
     item = current_user.favorites.find(params[:id])
     item.destroy
+    head :no_content
   end
 
   private
