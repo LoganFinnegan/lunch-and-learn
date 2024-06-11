@@ -14,6 +14,7 @@ gem 'rails', '~> 7.1.2'
 gem 'turbo-rails'
 gem 'tzinfo-data', platforms: %i[ mingw mswin x64_mingw jruby ]
 gem 'sqlite3', '~> 1.4'
+gem 'bcrypt'
 
 group :development, :test do
   gem 'capybara'

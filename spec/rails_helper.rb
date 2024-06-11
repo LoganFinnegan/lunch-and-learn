@@ -86,3 +86,24 @@ def check_hash_structure(object, key, data_type)
   expect(object).to have_key(key)
   expect(object[key]).to be_a(data_type)
 end
+
+def expect_attrs(attributes, keys, data_type)
+  keys.each do |key|
+    expect(attributes).to have_key(key)
+    expect(attributes[key]).to be_a(data_type)
+  end
+end
+
+def request_path(action, path, params = {})
+  headers = { 'CONTENT_TYPE': 'application/json', 'ACCEPT': 'application/json' }
+  case action
+  when :get
+    get path, headers: headers, params: params
+  when :post
+    post path, headers: headers, params: params
+  when :patch
+    patch path, headers: headers, params: params
+  when :delete
+    delete path, headers: headers, params: params
+  end
+end
