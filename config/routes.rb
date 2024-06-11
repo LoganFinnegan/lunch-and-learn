@@ -11,9 +11,9 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :recipes, only: [:index]
       resources :learning_resources, only: [:index]
-
       resources :users, only: [:new, :create]
       resources :sessions, only: [:new, :create]
+      resources :tourist_sites, only: [:index]
       resources :favorites, only: [:new, :create, :index, :destroy]
     end
   end

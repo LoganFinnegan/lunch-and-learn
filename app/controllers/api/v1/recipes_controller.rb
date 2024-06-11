@@ -9,7 +9,6 @@ class Api::V1::RecipesController < ApplicationController
         render json: { data: [] }
       end
     else 
-      # country = CountryFacade.get_country
       render json: { data: [] }
     end
   end

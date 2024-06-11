@@ -10,3 +10,4 @@ class User < ApplicationRecord
     update(api_pwd: SecureRandom.hex(15))
   end
 end
+
