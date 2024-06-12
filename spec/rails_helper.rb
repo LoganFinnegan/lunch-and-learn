@@ -87,10 +87,18 @@ def check_hash_structure(object, key, data_type)
   expect(object[key]).to be_a(data_type)
 end
 
-def expect_attrs(attributes, keys, data_type)
+def expect_hash_attrs(attributes, keys, data_type)
   keys.each do |key|
     expect(attributes).to have_key(key)
     expect(attributes[key]).to be_a(data_type)
+  end
+end
+
+def expect_obj_attrs(obj, keys, rvs, data_type)
+  keys.each_with_index do |key, i|
+    obj_key = obj.send(key)
+    expect(obj_key).to eq(rvs[i])
+    expect(obj_key).to be_a(data_type)
   end
 end
 

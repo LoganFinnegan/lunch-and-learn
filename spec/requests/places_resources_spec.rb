@@ -14,7 +14,7 @@ RSpec.describe 'Places' do
         expect(response.status).to eq(200)
         
         places = JSON.parse(response.body, symbolize_names: true)[:data].first
-require 'pry'; binding.pry
+
         expect(places[:id]).to be_nil
         check_hash_structure(places, :attributes, Hash)
         expect(places[:type]).to eq('tourist_site')

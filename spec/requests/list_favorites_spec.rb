@@ -31,12 +31,12 @@ RSpec.describe 'list favorites' do
 
       favs = JSON.parse(response.body, symbolize_names: true)[:data].first
 
-      expect_attrs(favs, [:id, :type], String)
+      expect_hash_attrs(favs, [:id, :type], String)
       expect(favs[:type]).to eq('favorite')
 
       attrs = favs[:attributes]
 
-      expect_attrs(attrs, [:recipe_title, :recipe_link, :country], String)
+      expect_hash_attrs(attrs, [:recipe_title, :recipe_link, :country], String)
     end
   end
 

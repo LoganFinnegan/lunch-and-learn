@@ -19,12 +19,12 @@ RSpec.describe 'Request' do
       user = JSON.parse(response.body, symbolize_names: true)[:data]
 
       check_hash_structure(user, :attributes, Hash)
-      expect_attrs(user, [:id, :type], String)
+      expect_hash_attrs(user, [:id, :type], String)
       expect(user[:type]).to eq('user')
 
       attrs = user[:attributes]
 
-      expect_attrs(attrs, [:name, :email, :api_key], String)
+      expect_hash_attrs(attrs, [:name, :email, :api_key], String)
     end
   end
 

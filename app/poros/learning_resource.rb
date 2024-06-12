@@ -9,6 +9,5 @@ class LearningResource
     @country = country
     @video   = video
     @images  = images
-
   end
 end

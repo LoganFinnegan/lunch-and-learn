@@ -1,17 +1,19 @@
 require 'rails_helper'
-
-RSpec.describe Recipe do
-  xit 'exists and has attributes' do
-    data = { id: '1', name: '2', email: '3',  }
-
-    country = "india"
-    x = Recipe.new(data, country)
+RSpec.describe ApiUser do
+  before(:each) do
+    @attrs = {
+      id:      '1',
+      name:    'Odell',
+      email:   'goodboy@ruffruff.com',
+      api_pwd: 'jgn983hyjgn983hy48thw9begh98h4539h4'
+    }
+    @obj = ApiUser.new(@attrs)
+  end
+  
+  it 'can format the data from the database' do
+    expect(@obj).to be_a ApiUser
+    rvs = ['1', 'Odell', 'goodboy@ruffruff.com', 'jgn983hyjgn983hy48thw9begh98h4539h4']
     
-    expect(x).to be_an(Recipe)
-    expect(x.id).to be_nil
-    expect(x.url).to be_a(String)
-    expect(x.image).to be_a(String)
-    expect(x.title).to be_a(String)
-    expect(x.country).to be_a(String)
+    expect_obj_attrs(@obj, [:id, :name, :email, :api_key], rvs, String)
   end
 end

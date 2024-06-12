@@ -5,9 +5,9 @@ class ApiUser
               :api_key
   
   def initialize(data)
-    @id      = data.id
-    @name    = data.name
-    @email   = data.email 
+    @id      = data[:id]
+    @name    = data[:name]
+    @email   = data[:email]
     @api_key = data[:api_pwd]
   end
 end
